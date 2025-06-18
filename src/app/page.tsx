@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import {
   ArrowRight,
   BookOpen,
@@ -123,9 +124,13 @@ export default function MynaEnglishLanding() {
           <div className="max-w-7xl mx-auto px-6 py-4">
             <div className="flex items-center justify-between">
               <div className="flex items-center space-x-3">
-                <div className="w-10 h-10 bg-gradient-to-br from-orange-400 to-orange-600 rounded-lg flex items-center justify-center">
-                  <BookOpen className="w-6 h-6 text-white" />
-                </div>
+                <Image
+                  src="/logo-myna.png"
+                  alt="Myna Logo"
+                  width={48}
+                  height={48}
+                  className="filter brightness-0 invert"
+                />
                 <div className="text-2xl font-bold text-gray-800">
                   <span style={{ color: "#D88755" }}>Myna</span>-English
                 </div>
@@ -616,9 +621,13 @@ export default function MynaEnglishLanding() {
             <div className="grid md:grid-cols-4 gap-8">
               <div>
                 <div className="flex items-center space-x-3 mb-4">
-                  <div className="w-10 h-10 bg-gradient-to-br from-orange-400 to-orange-600 rounded-lg flex items-center justify-center">
-                    <BookOpen className="w-6 h-6 text-white" />
-                  </div>
+                  <Image
+                    src="/logo-myna.png"
+                    alt="Myna Logo"
+                    width={48}
+                    height={48}
+                    className="filter brightness-0 invert"
+                  />
                   <div className="text-2xl font-bold">
                     <span style={{ color: "#D88755" }}>Myna</span>-English
                   </div>
