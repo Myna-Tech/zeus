@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 import {
   ArrowRight,
   BookOpen,
@@ -505,9 +505,9 @@ export default function MynaEnglishLanding() {
                   ))}
                 </div>
                 <p className="text-gray-700 mb-6 italic">
-                  "Berkat Myna-English, saya berhasil dapat beasiswa S2 di
+                  &quot;Berkat Myna-English, saya berhasil dapat beasiswa S2 di
                   Australia. IELTS score saya naik dari 6.0 ke 7.5 dalam 3
-                  bulan!"
+                  bulan!&quot;
                 </p>
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center mr-4">
@@ -532,9 +532,9 @@ export default function MynaEnglishLanding() {
                   ))}
                 </div>
                 <p className="text-gray-700 mb-6 italic">
-                  "Setelah 6 bulan belajar di Myna-English, akhirnya saya
+                  &quot;Setelah 6 bulan belajar di Myna-English, akhirnya saya
                   promosi jadi Project Manager. Confidence speaking saya
-                  meningkat drastis!"
+                  meningkat drastis!&quot;
                 </p>
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center mr-4">
@@ -561,8 +561,9 @@ export default function MynaEnglishLanding() {
                   ))}
                 </div>
                 <p className="text-gray-700 mb-6 italic">
-                  "Metode pengajarannya sangat praktis dan aplikatif. Sekarang
-                  saya sudah berani presentasi dalam bahasa Inggris di kantor!"
+                  &quot;Metode pengajarannya sangat praktis dan aplikatif.
+                  Sekarang saya sudah berani presentasi dalam bahasa Inggris di
+                  kantor!&quot;
                 </p>
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center mr-4">
