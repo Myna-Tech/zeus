@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
 import Image from "next/image";
 import {
   ArrowRight,
@@ -241,12 +242,13 @@ export default function MynaEnglishLanding() {
                   Tentang Kami
                 </a>
               </div>
-              <button
-                className="px-6 py-2 rounded-lg font-semibold text-white transition-all duration-300 hover-scale"
+              <Link
+                href="/auth"
+                className="px-6 py-2 rounded-lg font-semibold text-white transition-all duration-300 hover-scale inline-block"
                 style={{ backgroundColor: "#D88755" }}
               >
                 Mulai Belajar
-              </button>
+              </Link>
             </div>
           </div>
         </nav>
@@ -281,7 +283,8 @@ export default function MynaEnglishLanding() {
                   </p>
 
                   <div className="flex flex-col sm:flex-row gap-4">
-                    <button
+                    <Link
+                      href="/auth"
                       className="px-8 py-4 rounded-lg text-lg font-semibold text-white transition-all duration-300 hover-scale flex items-center justify-center relative overflow-hidden"
                       style={{ backgroundColor: "#D88755" }}
                     >
@@ -291,11 +294,13 @@ export default function MynaEnglishLanding() {
                       <Video className="mr-2 w-5 h-5" />
                       Mulai Kelas Online
                       <ArrowRight className="ml-2 w-5 h-5" />
-                    </button>
-                    <button className="px-8 py-4 rounded-lg text-lg font-semibold text-gray-700 border-2 border-gray-300 hover:border-orange-400 transition-all duration-300 flex items-center justify-center">
-                      <Play className="mr-2 w-5 h-5" />
-                      Demo Speaking Class
-                    </button>
+                    </Link>
+                    <Link href="https://www.instagram.com/reel/C-ZhvOnguT5/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">
+                      <button className="px-8 py-4 rounded-lg text-lg font-semibold text-gray-700 border-2 border-gray-300 hover:border-orange-400 transition-all duration-300 flex items-center justify-center">
+                        <Play className="mr-2 w-5 h-5" />
+                        Demo Speaking Class
+                      </button>
+                    </Link>
                   </div>
 
                   <div className="mt-10 flex items-center space-x-8">
