@@ -7,8 +7,8 @@ services:
     container_name: myna-english
     restart: unless-stopped
     volumes:
-      - /etc/letsencrypt/live/mynaenglish.com-0001/fullchain.pem:/home/node/app/cert/server.cert
-      - /etc/letsencrypt/live/mynaenglish.com-0001/privkey.pem:/home/node/app/cert/server.key
+      - /etc/letsencrypt/live/mynaenglish.com/fullchain.pem:/home/node/app/cert/server.cert
+      - /etc/letsencrypt/live/mynaenglish.com/privkey.pem:/home/node/app/cert/server.key
     ports:
       - "3000:3000"
     environment:
