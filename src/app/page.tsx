@@ -212,9 +212,9 @@ export default function MynaEnglishLanding() {
           <div className="max-w-7xl mx-auto px-6 py-4">
             <div className="flex items-center justify-between">
               <div className="flex items-center space-x-3">
-                <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center">
+                {/* <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center">
                   <Mic className="w-6 h-6 text-white" />
-                </div>
+                </div> */}
                 <div className="text-2xl font-bold text-gray-800">
                   <span style={{ color: "#D88755" }}>Myna</span>-English
                 </div>
@@ -1297,9 +1297,9 @@ export default function MynaEnglishLanding() {
             <div className="grid md:grid-cols-4 gap-8">
               <div>
                 <div className="flex items-center space-x-3 mb-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center">
+                  {/* <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center">
                     <Mic className="w-6 h-6 text-white" />
-                  </div>
+                  </div> */}
                   <div className="text-2xl font-bold">
                     <span style={{ color: "#D88755" }}>Myna</span>-English
                   </div>
