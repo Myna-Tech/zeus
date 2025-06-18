@@ -2,16 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import {
-  Eye,
-  EyeOff,
-  Mail,
-  Lock,
-  User,
-  ArrowLeft,
-  Mic,
-  CheckCircle,
-} from "lucide-react";
+import { Eye, EyeOff, Mail, Lock, User, CheckCircle } from "lucide-react";
 
 // Type definitions
 interface FormData {

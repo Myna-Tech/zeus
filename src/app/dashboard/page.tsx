@@ -1,9 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import Link from "next/link";
 import {
-  User,
   BookOpen,
   Calendar,
   FileText,
@@ -17,25 +15,18 @@ import {
   Bell,
   Search,
   GraduationCap,
-  Coffee,
-  Globe,
-  Mic,
   TrendingUp,
   CheckCircle,
   Users,
-  Target,
   ArrowRight,
   Trophy,
-  Zap,
   Book,
   Headphones,
   PenTool,
   MessageSquare,
   BarChart3,
-  Timer,
   PlayCircle,
   Lock,
-  PlusCircle,
 } from "lucide-react";
 
 // Types
