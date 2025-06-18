@@ -88,9 +88,27 @@ export default function AuthPage() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (validateForm()) {
-      // Handle form submission
-      console.log("Form submitted:", formData);
-      // Add your authentication logic here
+      // Static dummy login
+      if (isLogin) {
+        if (
+          formData.email === "amyanad09@gmail.com" &&
+          formData.sandi === "12345678"
+        ) {
+          // Successful login - redirect to dashboard
+          console.log("Login successful!");
+          window.location.href = "/dashboard";
+        } else {
+          // Invalid credentials
+          setErrors({
+            email: "Email atau sandi tidak valid",
+            sandi: "Email atau sandi tidak valid",
+          });
+        }
+      } else {
+        // Registration - for demo, just redirect to dashboard
+        console.log("Registration successful:", formData);
+        window.location.href = "/dashboard";
+      }
     }
   };
 
@@ -165,8 +183,22 @@ export default function AuthPage() {
         <div className="max-w-md w-full space-y-8">
           {/* Header */}
           <div className="text-center">
+            {/* <Link
+              href="/"
+              className="inline-flex items-center text-gray-600 hover:text-orange-600 transition-colors mb-8"
+            >
+              <ArrowLeft className="w-4 h-4 mr-2" />
+              Kembali ke beranda
+            </Link>
+
+            <div className="flex justify-center mb-6">
+              <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center">
+                <Mic className="w-8 h-8 text-white" />
+              </div>
+            </div> */}
+
             <h2 className="text-3xl font-bold text-gray-900 mb-2">
-              {isLogin ? "Masuk ke Myna-English" : "Daftar Myna-English"}
+              {isLogin ? "Masuk ke Akun Anda" : "Daftar Sekarang"}
             </h2>
             <p className="text-gray-600">
               {isLogin
@@ -222,7 +254,7 @@ export default function AuthPage() {
                       type="text"
                       value={formData.namaLengkap}
                       onChange={handleInputChange}
-                      className={`block w-full pl-10 pr-3 py-3 border rounded-lg input-focus placeholder-gray-400 ${
+                      className={`block w-full pl-10 pr-3 py-3 border rounded-lg input-focus text-black placeholder-gray-400 ${
                         errors.namaLengkap
                           ? "border-red-300"
                           : "border-gray-300"
@@ -256,7 +288,7 @@ export default function AuthPage() {
                     type="email"
                     value={formData.email}
                     onChange={handleInputChange}
-                    className={`block w-full pl-10 pr-3 py-3 border rounded-lg input-focus placeholder-gray-400 ${
+                    className={`block w-full pl-10 pr-3 py-3 border rounded-lg input-focus text-black placeholder-gray-400 ${
                       errors.email ? "border-red-300" : "border-gray-300"
                     }`}
                     placeholder="nama@email.com"
@@ -285,7 +317,7 @@ export default function AuthPage() {
                     type={showPassword ? "text" : "password"}
                     value={formData.sandi}
                     onChange={handleInputChange}
-                    className={`block w-full pl-10 pr-10 py-3 border rounded-lg input-focus placeholder-gray-400 ${
+                    className={`block w-full pl-10 pr-10 py-3 border rounded-lg input-focus text-black placeholder-gray-400 ${
                       errors.sandi ? "border-red-300" : "border-gray-300"
                     }`}
                     placeholder="Masukkan sandi Anda"
@@ -326,7 +358,7 @@ export default function AuthPage() {
                       type={showConfirmPassword ? "text" : "password"}
                       value={formData.konfirmasiSandi}
                       onChange={handleInputChange}
-                      className={`block w-full pl-10 pr-10 py-3 border rounded-lg input-focus placeholder-gray-400 ${
+                      className={`block w-full pl-10 pr-10 py-3 border rounded-lg input-focus text-black placeholder-gray-400 ${
                         errors.konfirmasiSandi
                           ? "border-red-300"
                           : "border-gray-300"
