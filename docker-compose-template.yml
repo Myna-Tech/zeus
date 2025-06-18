@@ -4,7 +4,7 @@ services:
   production:
     profiles: [production]
     image: eugeniusmario/myna-english:latest
-    container_name: ems1x-lp
+    container_name: myna-english
     restart: unless-stopped
     volumes:
       - /etc/letsencrypt/live/mynaenglish.com-0001/fullchain.pem:/home/node/app/cert/server.cert
