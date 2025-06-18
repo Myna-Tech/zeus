@@ -17,12 +17,6 @@ import {
 } from "lucide-react";
 
 export default function MynaEnglishLanding() {
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
   return (
     <>
       {/* Global styles for animations */}
