@@ -899,9 +899,9 @@ export default function Dashboard() {
           </div>
         </nav>
 
-        <div className="flex">
+        <div className="flex relative">
           {/* Sidebar */}
-          <aside className="w-64 bg-white shadow-lg h-[calc(100vh-80px)] sticky top-20">
+          <aside className="w-64 md:w-64 w-0 md:block hidden bg-white shadow-lg h-[calc(100vh-80px)] sticky top-20 transition-all duration-300">
             <div className="p-6">
               <div className="space-y-2">
                 {menuItems.map((item) => (
