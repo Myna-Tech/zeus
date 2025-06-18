@@ -1,0 +1,147 @@
+{
+  "name": "Myna-English - Kursus Speaking & Grammar Online",
+  "short_name": "Myna-English",
+  "description": "Kursus bahasa Inggris private online 1-on-1 via Zoom. Fokus speaking & grammar dengan tutor berpengalaman internasional.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#D88755",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "id",
+  "dir": "ltr",
+  "categories": ["education", "productivity"],
+  "screenshots": [
+    {
+      "src": "/screenshot-wide.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Myna-English Landing Page"
+    },
+    {
+      "src": "/screenshot-narrow.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Myna-English Mobile View"
+    }
+  ],
+  "icons": [
+    {
+      "src": "/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Trial Class Gratis",
+      "short_name": "Trial",
+      "description": "Daftar trial class gratis 60 menit",
+      "url": "/?action=trial",
+      "icons": [
+        {
+          "src": "/icon-trial.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Lihat Program",
+      "short_name": "Program",
+      "description": "Lihat program Academic English dan Daily Conversation",
+      "url": "/#program",
+      "icons": [
+        {
+          "src": "/icon-program.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "WhatsApp Kami",
+      "short_name": "WhatsApp",
+      "description": "Hubungi kami via WhatsApp",
+      "url": "https://wa.me/6281234567890",
+      "icons": [
+        {
+          "src": "/icon-whatsapp.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Kontak Kami",
+      "short_name": "Kontak",
+      "description": "Hubungi tim Myna-English",
+      "url": "https://mynaenglish.com/kontak-kami",
+      "icons": [
+        {
+          "src": "/icon-contact.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "web",
+      "url": "https://mynaenglish.com"
+    }
+  ],
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "launch_handler": {
+    "client_mode": ["navigate-existing", "navigate-new"]
+  }
+}

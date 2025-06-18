@@ -1,0 +1,45 @@
+# Robots.txt for mynaenglish
+# https://mynaenglish.com/robots.txt
+
+User-agent: *
+Allow: /
+
+# Allow all search engines to crawl
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot  
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+# Disallow admin/private areas (if any)
+# User-agent: *
+# Disallow: /admin/
+# Disallow: /private/
+# Disallow: /_next/
+
+# Sitemap location
+Sitemap: https://mynaenglish.com/sitemap.xml
+
+# Crawl-delay (optional - be nice to servers)
+Crawl-delay: 1
+
+# Host directive (helps with canonical)
+Host: https://mynaenglish.com
